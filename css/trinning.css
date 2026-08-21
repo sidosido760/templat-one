@@ -1,0 +1,181 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.header {
+    padding: 20px;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo {
+    width: 60px;
+} 
+.header .links{
+    position: relative;
+}
+.header .links .icon {
+    width: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.header .links .icon span {
+    background-color: #333;
+    margin-bottom: 5px;
+
+}
+.header .links .icon span:first-child {
+    height: 2px;
+    width: 100%;
+} 
+.header .links .icon span:nth-child(2) {
+    height: 2px;
+    width: 60%;
+    margin-left: 40%;
+}
+.header .links .icon span:last-child {
+    height: 2px;
+    width: 100%;
+}.header .links .icon:hover span:nth-child(2) {
+   width: 100%;
+   margin-left: 0%;
+      transition: .3s;
+}
+.header .links ul{
+    list-style: none;
+    background: rgb(153 223 221);
+    padding: 0px;
+    margin: 0px;
+    position: absolute;
+    right: 0px;
+    min-width: 200px;
+    top: calc(100% + 15px);
+    display: none;
+  
+}
+.header .links ul::before {
+    content:"" ;
+    border-width: 10px;
+    border-style: solid;
+    border-color:    transparent transparent  rgb(153 223 221) transparent; ;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+}
+.header .links ul li a{
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    color: #3e1212;
+    transition: .3s;
+  
+}
+.header .links ul li a:hover {
+    padding-left: 30px;
+}
+.header .links ul li:not(:last-child) {
+    border-bottom: gray solid 1px;
+}
+.header .links:hover ul  {
+    display: block;
+      transition: .3s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
